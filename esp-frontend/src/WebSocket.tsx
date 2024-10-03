@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { io } from "socket.io-client";
 
-const socket = io('http://localhost:3000');
+const serverUrl = import.meta.env.VITE_SERVER_URL;
+const socket = io(serverUrl);
 
 export default function WebSocketComponent() {
     const [messages, setMessages] = useState<string[]>([]);
@@ -24,14 +25,14 @@ export default function WebSocketComponent() {
     const subscribeToNotifications = async () => {
         try {
             const registration = await navigator.serviceWorker.register('/service-worker.js');
-            const response = await fetch('/vapidPublicKey');
+            const response = await fetch(`${serverUrl}/vapidPublicKey`);
             const { publicKey } = await response.json();
             const subscription = await registration.pushManager.subscribe({
                 userVisibleOnly: true,
                 applicationServerKey: publicKey
             });
 
-            await fetch('/subscribe', {
+            await fetch(`${serverUrl}/subscribe`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(subscription)
