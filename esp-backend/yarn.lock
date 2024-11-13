@@ -238,6 +238,17 @@ escape-html@~1.0.3:
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
 
+"esp-backend@file:.":
+  version "1.0.0"
+  dependencies:
+    cors "^2.8.5"
+    dotenv "^16.4.5"
+    esp-backend "file:../../../Library/Caches/Yarn/v6/npm-esp-backend-1.0.0-dd3c3afb-542d-42ef-bf67-0489ca49d118-1728567775839/node_modules/esp-backend"
+    express "^4.21.0"
+    socket.io "^4.8.0"
+    web-push "^3.6.7"
+    ws "^8.18.0"
+
 etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
@@ -665,6 +676,11 @@ web-push@^3.6.7:
     https-proxy-agent "^7.0.0"
     jws "^4.0.0"
     minimist "^1.2.5"
+
+ws@^8.18.0:
+  version "8.18.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
+  integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
 
 ws@~8.17.1:
   version "8.17.1"
