@@ -1,4 +1,4 @@
-const WebSocket = require("ws");
+const WebSocket = require("./node_modules/ws");
 const express = require("express");
 const http = require("http");
 const cors = require("cors");
