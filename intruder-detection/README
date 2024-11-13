@@ -1,0 +1,17 @@
+- Create a venv
+
+- Install the following dependancies
+
+```
+pip install streamlit
+pip install opencv-python-headless
+pip install requests
+pip install numpy
+pip install ultralytics
+```
+
+- Run model
+
+```
+streamlit run main.py
+```
