@@ -1,0 +1,3 @@
+0 feeding
+1 petting
+2 none

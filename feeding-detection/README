@@ -1,0 +1,11 @@
+- Create a venv
+
+- Install the following dependancies
+
+```
+pip install tensorflow
+pip install numpy
+pip install opencv-python
+```
+
+- Run model
